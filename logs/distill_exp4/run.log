@@ -1,0 +1,27 @@
+
+Epoch 1 | Learning Rate is 0.000100
+Epoch 1 | Mean train loss is 5.127189, Train acc is 85.821
+Epoch 1 | Mean valid loss is 0.953998, valid acc is 86.842
+Best valid acc is 86.842
+
+Epoch 2 | Learning Rate is 0.000090
+Epoch 2 | Mean train loss is 3.800811, Train acc is 87.220
+Epoch 2 | Mean valid loss is 0.711323, valid acc is 86.842
+Best valid acc is 86.842
+
+Epoch 3 | Learning Rate is 0.000065
+Epoch 3 | Mean train loss is 3.036084, Train acc is 90.205
+Epoch 3 | Mean valid loss is 0.459141, valid acc is 90.132
+Best valid acc is 90.132
+
+Epoch 4 | Learning Rate is 0.000035
+Epoch 4 | Mean train loss is 1.898734, Train acc is 94.683
+Epoch 4 | Mean valid loss is 0.512591, valid acc is 92.763
+Best valid acc is 92.763
+
+Epoch 5 | Learning Rate is 0.000010
+Epoch 5 | Mean train loss is 0.869817, Train acc is 98.787
+Epoch 5 | Mean valid loss is 0.289990, valid acc is 93.421
+Best valid acc is 93.421
+Start to test...
+Mean test loss is 0.557308, test acc is 90.064

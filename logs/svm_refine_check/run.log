@@ -1,0 +1,51 @@
+Namespace(dataset='tsinghua', exp_name='svm_refine_check', model='svm')
+New Testing on Tsinghua Scene1...
+
+Get Model...
+SVC()
+Start to train on public dataset...
+TRAIN_ACC: 0.9003
+TEST_ACC: 0.8590
+
+Test on Tsinghua dataset..
+ACC: 0.7154
+New Testing on Tsinghua Scene2...
+
+Get Model...
+SVC()
+Start to train on public dataset...
+TRAIN_ACC: 0.9003
+TEST_ACC: 0.8590
+
+Test on Tsinghua dataset..
+ACC: 0.6765
+New Testing on Tsinghua Scene3...
+
+Get Model...
+SVC()
+Start to train on public dataset...
+TRAIN_ACC: 0.9003
+TEST_ACC: 0.8590
+
+Test on Tsinghua dataset..
+ACC: 0.5646
+New Testing on Tsinghua Scene4...
+
+Get Model...
+SVC()
+Start to train on public dataset...
+TRAIN_ACC: 0.9003
+TEST_ACC: 0.8590
+
+Test on Tsinghua dataset..
+ACC: 0.5752
+New Testing on Tsinghua Scene5...
+
+Get Model...
+SVC()
+Start to train on public dataset...
+TRAIN_ACC: 0.9003
+TEST_ACC: 0.8590
+
+Test on Tsinghua dataset..
+ACC: 0.5517

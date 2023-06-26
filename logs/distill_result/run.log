@@ -1,0 +1,13 @@
+Start to test...
+Mean test loss is 0.292312, test acc is 87.500
+mAP(AP): 0.9812
+Directly calculate precision and recall:
+Precision: 0.9133574007220217
+Recall: 0.9440298507462687
+
+Start to test...
+Mean test loss is 0.557308, test acc is 90.064
+mAP(AP): 0.9757
+Directly calculate precision and recall:
+Precision: 0.9247311827956989
+Recall: 0.9626865671641791

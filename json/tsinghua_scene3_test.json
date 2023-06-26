@@ -1,0 +1,838 @@
+[
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0069.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0175.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0050.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0170.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0177.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0210.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0223.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0224.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0226.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0055.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0012.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0169.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0044.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0009.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0193.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0183.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0011.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0070.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0072.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0178.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0003.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0048.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0073.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0131.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0206.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0215.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0005.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0205.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0222.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0017.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0202.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0216.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0071.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0019.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0194.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0136.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0181.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0196.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0211.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0208.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0016.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0192.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0133.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0218.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0065.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0062.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0219.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0220.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0046.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0064.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0221.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0203.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0002.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0225.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0200.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0022.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0214.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0180.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0063.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0001.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0195.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0000.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0010.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0204.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0139.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0207.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0015.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0212.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0052.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0135.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0008.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0061.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0020.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0138.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0068.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0182.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0184.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0132.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0217.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0058.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0198.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0021.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0006.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0176.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0043.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0013.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0004.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0174.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0168.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0201.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0007.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0014.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0067.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0137.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0066.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0141.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0049.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0179.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0140.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0173.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0227.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0228.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0172.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0142.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0057.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0060.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0199.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0171.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0018.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0197.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0045.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0167.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0051.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0185.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0213.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0056.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0209.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/stairs/frame0134.jpg",
+        "label": 1
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0090.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0125.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0126.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0112.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0100.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0190.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0157.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0107.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0110.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0119.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0129.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0095.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0082.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0085.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0101.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0093.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0104.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0159.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0098.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0105.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0047.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0114.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0150.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0188.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0145.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0076.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0083.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0187.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0162.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0113.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0086.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0103.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0081.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0143.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0166.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0099.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0075.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0164.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0084.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0151.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0160.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0156.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0186.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0074.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0118.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0158.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0124.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0097.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0106.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0120.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0146.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0092.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0189.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0102.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0127.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0077.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0154.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0115.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0149.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0089.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0116.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0080.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0108.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0079.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0117.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0109.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0096.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0078.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0128.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0153.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0054.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0053.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0148.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0059.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0165.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0130.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0091.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0191.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0094.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0123.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0163.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0088.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0161.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0144.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0111.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0155.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0121.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0147.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0087.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0152.jpg",
+        "label": 0
+    },
+    {
+        "dir": "stair/tsinghua/scene3/no_stairs/frame0122.jpg",
+        "label": 0
+    }
+]

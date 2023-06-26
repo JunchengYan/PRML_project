@@ -1,0 +1,78 @@
+from __future__ import print_function
+import os
+import argparse
+import sklearn.metrics as metrics
+import numpy as np
+import torch
+from torch.nn import functional as F
+from tqdm import tqdm
+from matplotlib import pyplot as plt
+from torchvision import transforms
+from torch.utils.data import DataLoader, random_split
+from sklearn.svm import SVC
+from data import load_and_split_data, load_scene_Tsinghua_data, StairDataset
+from model import ResNet18
+from utils import IOStream
+from main import train, test_and_eval, evaluate, _init_, tsinghua_main
+import json
+
+def cal_acc(args, io):
+    data_set1, data_set2, data_set3, data_set4, data_set5 = load_scene_Tsinghua_data('./stair/tsinghua/')
+    data_transform = transforms.Compose([
+        transforms.Resize([96, 96]),
+        transforms.ToTensor(),
+    ])
+    
+    dataset_list = [data_set1, data_set2, data_set3, data_set4, data_set5]
+    for i in range(5):
+        io.cprint('Testing on Tsinghua Scene' + str(i+1)+ '...')
+        dataset = StairDataset(dataset_list[i], 'test', transform=data_transform)
+        tsinghua_main(args, io, eval=False, test_set=dataset)
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Images classification')
+    parser.add_argument('--exp_name', type=str, default='exp', help='Name of the experiment')
+    parser.add_argument('--model', type=str, default='svm', choices=['svm', 'resnet'], help='Choose model')
+    parser.add_argument('--dataset', type=str, default='public', choices=['public', 'tsinghua'], help='Choose dataset')
+    args = parser.parse_args()
+    
+    _init_(args)
+    
+    io = IOStream('./logs/' + args.exp_name + '/run.log')
+    io.cprint(str(args))
+    
+    cal_acc(args, io)
+    
+    '''
+    
+    data_set1, data_set2, data_set3, data_set4, data_set5 = load_scene_Tsinghua_data('./stair/tsinghua/')
+    extra_trainset, rested_set = random_split(data_set2, [int(len(data_set2)*0.5), int(len(data_set2)*0.5)], generator=torch.Generator().manual_seed(42))
+    
+    trainset, validset, testset = load_and_split_data('./stair/public/')
+    
+    trainset = trainset + list(extra_trainset)
+    tsinghua_testset = data_set1 + data_set3 + data_set4 + data_set5 + list(rested_set)
+    FILE_PREFIX = 'public_refined'
+    with open(f'{FILE_PREFIX}_train.json', 'wt') as f:
+        json.dump(trainset, f, indent=4)
+    with open(f'{FILE_PREFIX}_valid.json', 'wt') as f:
+        json.dump(validset, f, indent=4)
+    with open(f'{FILE_PREFIX}_test.json', 'wt') as f:
+        json.dump(testset, f, indent=4)
+    FILE_PREFIX = 'tsinghua_refined'
+    with open(f'{FILE_PREFIX}_test.json', 'wt') as f:
+        json.dump(tsinghua_testset, f, indent=4)
+    
+    data_transform = transforms.Compose([
+        transforms.Resize([96, 96]),
+        transforms.ToTensor(),
+    ])
+    trainset = StairDataset(trainset, 'train', transform=data_transform)
+    validset = StairDataset(validset, 'valid', transform=data_transform)
+    testset = StairDataset(testset, 'test', transform=data_transform)
+    tsinghua_testset = StairDataset(tsinghua_testset, 'test', transform=data_transform)
+    tsinghua_main(args, io, eval=True, train_set=trainset, valid_set=validset, test_set=tsinghua_testset, test_set_for_main=testset)
+    
+    '''
+    
+    

@@ -1,0 +1,17 @@
+Namespace(dataset='tsinghua', exp_name='svm_refine_exp', model='svm')
+
+Get Model...
+SVC()
+Start to train on public dataset...
+TRAIN_ACC: 0.9003
+TEST_ACC: 0.8590
+
+Test on Tsinghua dataset..
+ACC: 0.5946
+mAP(AP): 0.6524
+Directly calculate precision and recall:
+Precision: 0.5895287958115183
+Recall: 1.0
+Set threshold to 0.581 and calculate precision and recall:
+Precision: 0.5996055226824457
+Recall: 0.5399644760213144

@@ -1,0 +1,14 @@
+Namespace(dataset='tsinghua', exp_name='res_tsinghua', model='resnet')
+
+Get Model...
+
+Loading Tsinghua data...
+Start to test...
+Mean test loss is 2.241302, test acc is 50.849
+mAP(AP): 0.6038
+Directly calculate precision and recall:
+Precision: 0.6053921568627451
+Recall: 0.4273356401384083
+Set threshold to 0.12 and calculate precision and recall:
+Precision: 0.5557491289198606
+Recall: 0.5519031141868512

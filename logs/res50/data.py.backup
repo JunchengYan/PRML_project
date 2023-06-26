@@ -1,0 +1,159 @@
+import torch
+from torch.utils.data import Dataset, random_split
+from torchvision import transforms
+import json
+import random
+from PIL import Image
+from pathlib import Path
+
+class StairDataset(Dataset):
+    def __init__(self, data, type, transform=None):
+        self.data = data
+        assert type in ['train', 'valid', 'test']
+        self.type = type
+        self.transform = transform
+
+    def __getitem__(self, index):
+        img = Image.open(self.data[index]['dir'])
+        label = int(self.data[index]['label'])
+        if self.transform:
+            img = self.transform(img)
+        return img, label
+
+    def __len__(self):
+        return len(self.data)
+
+def load_scene_Tsinghua_data(data_dir):
+    DATA_DIR = data_dir
+    FILE_PREFIX = 'tsinghua_scene' 
+    data_set1, data_set2, data_set3, data_set4, data_set5 = [], [], [], [], []
+    for img_dir in Path(DATA_DIR).rglob('*.jpg'):
+        img_dir = str(img_dir)
+        label = 0 if 'no_stairs' in img_dir else 1
+        if 'scene1' in img_dir:
+            data_set1.append({'dir': img_dir, 'label': label})
+        elif 'scene2' in img_dir:
+            data_set2.append({'dir': img_dir, 'label': label})
+        elif 'scene3' in img_dir:
+            data_set3.append({'dir': img_dir, 'label': label})
+        elif 'scene4' in img_dir:
+            data_set4.append({'dir': img_dir, 'label': label})
+        elif 'scene5' in img_dir:
+            data_set5.append({'dir': img_dir, 'label': label})
+    with open(f'{FILE_PREFIX}{1}_test.json', 'wt') as f:
+        json.dump(data_set1, f, indent=4)
+    with open(f'{FILE_PREFIX}{2}_test.json', 'wt') as f:
+        json.dump(data_set2, f, indent=4) 
+    with open(f'{FILE_PREFIX}{3}_test.json', 'wt') as f:
+        json.dump(data_set3, f, indent=4)
+    with open(f'{FILE_PREFIX}{4}_test.json', 'wt') as f:
+        json.dump(data_set4, f, indent=4)
+    with open(f'{FILE_PREFIX}{5}_test.json', 'wt') as f:
+        json.dump(data_set5, f, indent=4)
+    return data_set1, data_set2, data_set3, data_set4, data_set5
+
+def load_Tsinghua_data(data_dir):
+    DATA_DIR = data_dir
+    FILE_PREFIX = 'tsinghua_full' 
+    data_set = []
+    for img_dir in Path(DATA_DIR).rglob('*.jpg'):
+        img_dir = str(img_dir)
+        label = 0 if 'no_stairs' in img_dir else 1
+        data_set.append({'dir': img_dir, 'label': label})
+    with open(f'{FILE_PREFIX}_test.json', 'wt') as f:
+        json.dump(data_set, f, indent=4)
+    return data_set
+
+
+def load_and_split_data(data_dir):
+    DATA_DIR = data_dir
+    SEED = 42
+    FILE_PREFIX = 'public' 
+    SPLIT_RATIO = (7, 1, 2)
+    
+    random.seed(SEED)
+    sum_ratio = sum(SPLIT_RATIO)
+    normed_ratio = [ratio / sum_ratio for ratio in SPLIT_RATIO]
+    cusum = 0.
+    cdf = [0] * len(normed_ratio)
+    for i, ratio in enumerate(normed_ratio):
+        cusum += ratio
+        cdf[i] = cusum
+        
+    train_set, valid_set, test_set = [], [], [] 
+    for img_dir in Path(DATA_DIR).rglob('*.jpg'):
+        p = random.random()
+        img_dir = str(img_dir)
+        label = 0 if 'no_stairs' in img_dir else 1
+        if p < cdf[0]:
+            train_set.append({'dir': img_dir, 'label': label})
+        elif p < cdf[1]:
+            valid_set.append({'dir': img_dir, 'label': label})
+        else:
+            test_set.append({'dir': img_dir, 'label': label})
+    with open(f'{FILE_PREFIX}_train.json', 'wt') as f:
+        json.dump(train_set, f, indent=4)
+    with open(f'{FILE_PREFIX}_valid.json', 'wt') as f:
+        json.dump(valid_set, f, indent=4)
+    with open(f'{FILE_PREFIX}_test.json', 'wt') as f:
+        json.dump(test_set, f, indent=4)
+    
+    print(f'Train dataset length is: {len(train_set)}, Valid dataset length is: {len(valid_set)}, Test dataset length is: {len(test_set)}')
+    return train_set, valid_set, test_set
+    
+
+if __name__ == '__main__':
+    # trainset, validset, testset = load_and_split_data('./stair/public/')
+    # train_transform = transforms.Compose([
+    #     # transforms.RandomRotation(30, center=(0, 0), expand=True),
+        
+    #     # transforms.RandomResizedCrop(size=256),
+        
+    #     # transforms.RandomHorizontalFlip(0.5),
+    #     # transforms.RandomRotation(90),
+        
+    #     transforms.Resize([48, 48]),
+    #     transforms.ToTensor(),
+    #     # transforms.Normalize(mean, std)
+    # ])
+    
+    # test_transform = transforms.Compose([
+    #     # transforms.RandomHorizontalFlip(0.5),
+    #     # transforms.RandomRotation(90),
+    #     # transforms.Resize([48, 48]),
+    #     transforms.ToTensor(),
+    #     # transforms.Normalize(mean, std)
+    # ])
+    
+    # img = Image.open('./stair/public/stairs/down/IMG_20190415_140429.jpg')
+    # img.save('star.png', 'PNG', quality=95)
+    dataset = load_Tsinghua_data('./stair/tsinghua/')
+    data_transform = transforms.Compose([
+        transforms.Resize([256, 256]),
+        transforms.ToTensor(),
+    ])
+    img = Image.open('./stair/tsinghua/scene3/no_stairs/frame0129.jpg')
+    img.save('star.png', 'PNG', quality=95)
+    
+    # print(dataset[0])
+    # print(dataset[1])
+    # print(dataset[3])
+    # print('\n')
+    # print(dataset[2])
+    # print(dataset[5])
+    # print(dataset[7])
+    # print(dataset[8])
+    # print('\n')
+    # print(dataset[125])
+    # print(dataset[127])
+    # print(dataset[128])
+    # test_set = StairDataset(dataset, 'test', data_transform)
+    # img, label = test_set[965]
+    # print(label)
+    # trans_to_pil = transforms.ToPILImage(mode="RGB")
+    # img_pil = trans_to_pil(img)
+    # img_pil.save('star.png', 'PNG', quality=95)
+    # data_set1, data_set2, data_set3, data_set4, data_set5 = load_scene_Tsinghua_data('./stair/tsinghua/')
+    # dataset_list = [data_set1, data_set2, data_set3, data_set4, data_set5]
+    # for i in range(5):
+    #     print(len(dataset_list[i]))

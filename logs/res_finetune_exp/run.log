@@ -1,0 +1,228 @@
+Namespace(dataset='tsinghua', exp_name='res_finetune_exp', model='resnet')
+ResNet18(
+  (b1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  )
+  (b2): Sequential(
+    (0): Residual(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): Residual(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (b3): Sequential(
+    (0): Residual(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (conv3): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2))
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): Residual(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (b4): Sequential(
+    (0): Residual(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (conv3): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2))
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): Residual(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (b5): Sequential(
+    (0): Residual(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (conv3): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2))
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): Residual(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (drop2): Dropout(p=0.5, inplace=False)
+  (drop3): Dropout(p=0.5, inplace=False)
+  (drop4): Dropout(p=0.5, inplace=False)
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (flatten): Flatten(start_dim=1, end_dim=-1)
+  (fc): Linear(in_features=512, out_features=2, bias=True)
+)
+Using: cuda
+Number of model parameters: 11.18M
+Start to train on public dataset...
+
+Epoch 1 | Learning Rate is 0.000100
+Epoch 1 | Mean train loss is 0.060748, Train acc is 98.651
+Epoch 1 | Mean valid loss is 0.239016, valid acc is 92.105
+Best valid acc is 92.105
+
+Epoch 2 | Learning Rate is 0.000100
+Epoch 2 | Mean train loss is 0.029008, Train acc is 98.831
+Epoch 2 | Mean valid loss is 0.298548, valid acc is 91.447
+Best valid acc is 92.105
+
+Epoch 3 | Learning Rate is 0.000099
+Epoch 3 | Mean train loss is 0.041382, Train acc is 98.651
+Epoch 3 | Mean valid loss is 0.189167, valid acc is 89.474
+Best valid acc is 92.105
+
+Epoch 4 | Learning Rate is 0.000098
+Epoch 4 | Mean train loss is 0.016312, Train acc is 99.640
+Epoch 4 | Mean valid loss is 0.251836, valid acc is 92.105
+Best valid acc is 92.105
+
+Epoch 5 | Learning Rate is 0.000096
+Epoch 5 | Mean train loss is 0.037474, Train acc is 98.561
+Epoch 5 | Mean valid loss is 0.484169, valid acc is 86.842
+Best valid acc is 92.105
+
+Epoch 6 | Learning Rate is 0.000093
+Epoch 6 | Mean train loss is 0.056643, Train acc is 98.471
+Epoch 6 | Mean valid loss is 0.326437, valid acc is 90.132
+Best valid acc is 92.105
+
+Epoch 7 | Learning Rate is 0.000090
+Epoch 7 | Mean train loss is 0.009647, Train acc is 99.730
+Epoch 7 | Mean valid loss is 0.346277, valid acc is 88.816
+Best valid acc is 92.105
+
+Epoch 8 | Learning Rate is 0.000087
+Epoch 8 | Mean train loss is 0.011110, Train acc is 99.730
+Epoch 8 | Mean valid loss is 0.443855, valid acc is 89.474
+Best valid acc is 92.105
+
+Epoch 9 | Learning Rate is 0.000083
+Epoch 9 | Mean train loss is 0.003698, Train acc is 100.000
+Epoch 9 | Mean valid loss is 0.537516, valid acc is 88.816
+Best valid acc is 92.105
+
+Epoch 10 | Learning Rate is 0.000079
+Epoch 10 | Mean train loss is 0.015844, Train acc is 99.281
+Epoch 10 | Mean valid loss is 0.385554, valid acc is 90.789
+Best valid acc is 92.105
+
+Epoch 11 | Learning Rate is 0.000075
+Epoch 11 | Mean train loss is 0.016256, Train acc is 99.550
+Epoch 11 | Mean valid loss is 0.338116, valid acc is 92.105
+Best valid acc is 92.105
+
+Epoch 12 | Learning Rate is 0.000070
+Epoch 12 | Mean train loss is 0.028419, Train acc is 98.921
+Epoch 12 | Mean valid loss is 0.328942, valid acc is 91.447
+Best valid acc is 92.105
+
+Epoch 13 | Learning Rate is 0.000065
+Epoch 13 | Mean train loss is 0.007370, Train acc is 99.820
+Epoch 13 | Mean valid loss is 0.238770, valid acc is 92.763
+Best valid acc is 92.763
+
+Epoch 14 | Learning Rate is 0.000060
+Epoch 14 | Mean train loss is 0.006084, Train acc is 99.730
+Epoch 14 | Mean valid loss is 0.288042, valid acc is 92.105
+Best valid acc is 92.763
+
+Epoch 15 | Learning Rate is 0.000055
+Epoch 15 | Mean train loss is 0.004023, Train acc is 99.910
+Epoch 15 | Mean valid loss is 0.486607, valid acc is 88.816
+Best valid acc is 92.763
+
+Epoch 16 | Learning Rate is 0.000050
+Epoch 16 | Mean train loss is 0.003653, Train acc is 99.820
+Epoch 16 | Mean valid loss is 0.328300, valid acc is 90.789
+Best valid acc is 92.763
+
+Epoch 17 | Learning Rate is 0.000045
+Epoch 17 | Mean train loss is 0.000607, Train acc is 100.000
+Epoch 17 | Mean valid loss is 0.335098, valid acc is 93.421
+Best valid acc is 93.421
+
+Epoch 18 | Learning Rate is 0.000040
+Epoch 18 | Mean train loss is 0.000641, Train acc is 100.000
+Epoch 18 | Mean valid loss is 0.308293, valid acc is 92.763
+Best valid acc is 93.421
+
+Epoch 19 | Learning Rate is 0.000035
+Epoch 19 | Mean train loss is 0.000346, Train acc is 100.000
+Epoch 19 | Mean valid loss is 0.316950, valid acc is 93.421
+Best valid acc is 93.421
+
+Epoch 20 | Learning Rate is 0.000030
+Epoch 20 | Mean train loss is 0.001258, Train acc is 99.910
+Epoch 20 | Mean valid loss is 0.321141, valid acc is 91.447
+Best valid acc is 93.421
+
+Epoch 21 | Learning Rate is 0.000025
+Epoch 21 | Mean train loss is 0.000317, Train acc is 100.000
+Epoch 21 | Mean valid loss is 0.353563, valid acc is 92.763
+Best valid acc is 93.421
+
+Epoch 22 | Learning Rate is 0.000021
+Epoch 22 | Mean train loss is 0.000311, Train acc is 100.000
+Epoch 22 | Mean valid loss is 0.324904, valid acc is 92.105
+Best valid acc is 93.421
+
+Epoch 23 | Learning Rate is 0.000017
+Epoch 23 | Mean train loss is 0.000150, Train acc is 100.000
+Epoch 23 | Mean valid loss is 0.301098, valid acc is 92.105
+Best valid acc is 93.421
+
+Epoch 24 | Learning Rate is 0.000013
+Epoch 24 | Mean train loss is 0.000584, Train acc is 100.000
+Epoch 24 | Mean valid loss is 0.336071, valid acc is 91.447
+Best valid acc is 93.421
+
+Epoch 25 | Learning Rate is 0.000010
+Epoch 25 | Mean train loss is 0.000335, Train acc is 100.000
+Epoch 25 | Mean valid loss is 0.326178, valid acc is 91.447
+Best valid acc is 93.421
+
+Epoch 26 | Learning Rate is 0.000007
+Epoch 26 | Mean train loss is 0.000127, Train acc is 100.000
+Epoch 26 | Mean valid loss is 0.337913, valid acc is 91.447
+Best valid acc is 93.421
+Start to test...
+Mean test loss is 0.634960, test acc is 88.462
+Start to test...
+Mean test loss is 1.965680, test acc is 54.705
+mAP(AP): 0.6554
+Directly calculate precision and recall:
+Precision: 0.6811594202898551
+Recall: 0.41740674955595025
+Set threshold to 0.581 and calculate precision and recall:
+Precision: 0.6820987654320988
+Recall: 0.3925399644760213
+Namespace(dataset='tsinghua', eval=True, exp_name='res_finetune_exp', model='resnet')
+Start to test...
+Mean test loss is 1.965680, test acc is 54.705
+mAP(AP): 0.6554
+Directly calculate precision and recall:
+Precision: 0.6811594202898551
+Recall: 0.41740674955595025
+Set threshold to 0.1 and calculate precision and recall:
+Precision: 0.622093023255814
+Recall: 0.5701598579040853
